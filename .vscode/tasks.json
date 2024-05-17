@@ -53,29 +53,6 @@
       "problemMatcher": []
     },
     {
-        "label": "Generate Hoogle database",
-        "type": "shell",
-        "command": "stack hoogle --rebuild",
-        "presentation": {
-            "focus": true,
-            "panel": "dedicated"
-        },
-        "problemMatcher": []
-    },
-    {
-        "label": "Start Hoogle server",
-        "type": "shell",
-        "command": "stack hoogle --server",
-        "presentation": {
-            "reveal": "never",
-            "panel": "dedicated"
-        },
-        "problemMatcher": [],
-        "runOptions": {
-            "runOn": "folderOpen"
-        }
-    },
-    {
       "isBackground": true,
       "type": "shell",
       "label": "Watch",
