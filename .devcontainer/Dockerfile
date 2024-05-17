@@ -44,6 +44,9 @@ ENV PATH="/home/${USERNAME}/.local/bin:/home/${USERNAME}/.cabal/bin:/home/${USER
 
 RUN echo "export PATH=${PATH}" >> /home/${USERNAME}/.profile
 
+# Copy warpify script to .bashrc
+RUN echo "printf '\eP$f{\"hook\": \"SourcedRcFileForWarp\", \"value\": { \"shell\": \"bash\" }}\x9c'" >> /home/vscode/.bashrc
+
 ENV BOOTSTRAP_HASKELL_NONINTERACTIVE=yes \
     BOOTSTRAP_HASKELL_NO_UPGRADE=yes
 
